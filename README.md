@@ -1,6 +1,16 @@
 # jwt-authentication-using-in-express-and-mongo-db-swagger-implementation
 jwt authentication using in express and mongodb, implemented swagger documentaion
 
+Implemented Below Feature in this POC
+
+- openapi
+- swagger for get, post, put, delete
+- swagger for JWT token
+- dotenv feature
+- JWT (json web token)
+- nodemon feature
+- mongodb
+
 Generate Compass URL in the cluster like below
 mongodb+srv://cseashok027:<password>@cluster0.em3lh9z.mongodb.net/
 
