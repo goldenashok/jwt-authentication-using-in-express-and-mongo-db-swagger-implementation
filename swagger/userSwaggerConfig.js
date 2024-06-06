@@ -240,5 +240,5 @@
  *                 message:
  *                   type: string
  *                   description: success message
- *                   example: User with id: 665d8981c6d16e5478abbec8 updated successfully.
+ *                   example: User with id 665d8981c6d16e5478abbec8 updated successfully.
  */
