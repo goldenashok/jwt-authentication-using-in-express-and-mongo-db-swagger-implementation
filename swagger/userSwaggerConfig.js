@@ -109,7 +109,7 @@
 
 /**
  * @swagger
- * /authenticate:
+ * /users/authenticate:
  *   post:
  *     summary: create a list of todos.
  *     description: Retrieve a list of users from JSONPlaceholder.
@@ -127,10 +127,21 @@
  *           application/json:
  *             schema:
  *               $ref: '#/components/schemas/authenticateResponse'
+ *       400:
+ *         description: error message
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   description: success message
+ *                   example: User Registered successfully with email
  */
 /**
  * @swagger
- * /register:
+ * /users/register:
  *   post:
  *     summary: Add new user.
  *     description: add new user to the list.
@@ -157,10 +168,15 @@
 
 /**
  * @swagger
- * /${id}:
+ * /users/${id}:
  *   get:
  *     summary: list the all user.
  *     description: list the user details.
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         schema:
+ *           type: integer
  *     responses:
  *       200:
  *         description: A list of users.
@@ -174,7 +190,7 @@
 
 /**
  * @swagger
- * /:
+ * /users/:
  *   get:
  *     summary: list the all user.
  *     description: list the all user in the user list.
@@ -191,7 +207,7 @@
 
 /**
  * @swagger
- * /${id}:
+ * /users/${id}:
  *   put:
  *     summary: list the user.
  *     description: list the all user in the user list.
@@ -220,7 +236,7 @@
 
 /**
  * @swagger
- * /${id}:
+ * /users/${id}:
  *   put:
  *     summary: delete user.
  *     description: list the all user in the user list.
